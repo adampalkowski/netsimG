@@ -1,3 +1,3 @@
-G:/netsim/cmake-build-debug/CMakeFiles/netsim.dir
-G:/netsim/cmake-build-debug/CMakeFiles/edit_cache.dir
-G:/netsim/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+C:/Szymi/semestr 2/programowanie obiekt/zadania/mdig-agh-lang_cpp__exercises-288bd81c85d7/skeletons/netsimG/cmake-build-debug/CMakeFiles/netsim.dir
+C:/Szymi/semestr 2/programowanie obiekt/zadania/mdig-agh-lang_cpp__exercises-288bd81c85d7/skeletons/netsimG/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Szymi/semestr 2/programowanie obiekt/zadania/mdig-agh-lang_cpp__exercises-288bd81c85d7/skeletons/netsimG/cmake-build-debug/CMakeFiles/rebuild_cache.dir

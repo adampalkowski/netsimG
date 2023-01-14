@@ -77,13 +77,16 @@
 				{
 					"backtrace" : 2,
 					"fragment" : "-Wconversion"
+				},
+				{
+					"fragment" : "-std=gnu++17"
 				}
 			],
 			"includes" : 
 			[
 				{
 					"backtrace" : 3,
-					"path" : "G:/netsim/include"
+					"path" : "C:/Szymi/semestr 2/programowanie obiekt/zadania/mdig-agh-lang_cpp__exercises-288bd81c85d7/skeletons/netsimG/include"
 				}
 			],
 			"language" : "CXX",

@@ -1,4 +1,4 @@
-# Install script for directory: G:/netsim
+# Install script for directory: C:/Szymi/semestr 2/programowanie obiekt/zadania/mdig-agh-lang_cpp__exercises-288bd81c85d7/skeletons/netsimG
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -34,7 +34,7 @@ endif()
 
 # Set default install directory permissions.
 if(NOT DEFINED CMAKE_OBJDUMP)
-  set(CMAKE_OBJDUMP "G:/JetBrains/CLion 2022.2.4/bin/mingw/bin/objdump.exe")
+  set(CMAKE_OBJDUMP "C:/Szymi/clion pliki/mingw64/bin/objdump.exe")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "G:/netsim/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "C:/Szymi/semestr 2/programowanie obiekt/zadania/mdig-agh-lang_cpp__exercises-288bd81c85d7/skeletons/netsimG/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

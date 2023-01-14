@@ -9,7 +9,7 @@
 					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
 					"minimumCMakeVersion" : 
 					{
-						"string" : "3.23"
+						"string" : "3.21"
 					},
 					"projectIndex" : 0,
 					"source" : ".",
@@ -39,7 +39,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "netsim::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-netsim-Debug-ec9d1b84ffd4fc968abe.json",
+					"jsonFile" : "target-netsim-Debug-b6211d288e0c443437ae.json",
 					"name" : "netsim",
 					"projectIndex" : 0
 				}
@@ -49,12 +49,12 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "G:/netsim/cmake-build-debug",
-		"source" : "G:/netsim"
+		"build" : "C:/Szymi/semestr 2/programowanie obiekt/zadania/mdig-agh-lang_cpp__exercises-288bd81c85d7/skeletons/netsimG/cmake-build-debug",
+		"source" : "C:/Szymi/semestr 2/programowanie obiekt/zadania/mdig-agh-lang_cpp__exercises-288bd81c85d7/skeletons/netsimG"
 	},
 	"version" : 
 	{
 		"major" : 2,
-		"minor" : 4
+		"minor" : 3
 	}
 }
