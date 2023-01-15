@@ -45,7 +45,8 @@ Package PackageQueue::pop() {
     return package_to_pop;
 }
 
-void PackageQueue::push(Package &&) {
+//TODO: Trzeba to zrobić
+void PackageQueue::push(Package&&) {
 
 }
 
