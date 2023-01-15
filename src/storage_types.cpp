@@ -1,6 +1,3 @@
-//
-// Created by adamp on 08.01.2023.
-//
 #include <iostream>
 #include "storage_types.hpp"
 #include "types.hpp"
@@ -23,26 +20,29 @@ bool PackageQueue:: empty() const {
 }
 
 Package PackageQueue::pop() {
+    Package package_to_pop;
 
     // co zwrocic jesli jest pusta ???
-    if (empty()){
+    if (package_list.empty()){
         try{
             throw EmptyQueException();
-
         }catch (EmptyQueException mce) {
             std::cout << "Caught EmptyQueException" << std::endl;
             std::cout << mce.what();
         }
     }
-    if(get_queue_type()==LIFO){
-        auto aPackage=package_list.back();
-        package_list.pop_back();
-        return *aPackage;
-    }else{
-        auto aPackage=package_list.front();
-        package_list.pop_front();
-        return
+    switch(packageQueueType){
+        case PackageQueueType::LIFO:
+            package_to_pop = std::move(package_list.back());
+            package_list.pop_back();
+            break;
+
+        case PackageQueueType::FIFO:
+            package_to_pop = std::move(package_list.front());
+            package_list.pop_front();
+            break;
     }
+    return package_to_pop;
 }
 
 void PackageQueue::push(Package &&) {

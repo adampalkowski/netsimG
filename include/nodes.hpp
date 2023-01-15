@@ -1,7 +1,3 @@
-//
-// Created by adamp on 08.01.2023.
-//
-
 #ifndef NETSIM_NODES_HPP
 #define NETSIM_NODES_HPP
 

@@ -21,9 +21,21 @@ Package::Package() {
         assigned_IDs.insert(ID_)
     }
 }
+// via. strona Microsoftu, więc powinno byc ok
+//TODO: trzeba sprawdzić czy git
+Package::Package(Package&& other) noexcept : ID_(0){
+    *this = std::move(other);
+}
 
-//TODO: bo niestety nwm jak :((
-Package::Package(Package&& package){}
+//TODO: to samo co wyżej
+Package& Package::operator=(Package&& other) noexcept{
+    if(this != &other){
+        delete[] &ID_; //tutaj najbardziej nwm czy git, bo wszędzie używają delete[] ale mają wskaźniki więc usuwają adres
+        ID_ = other.ID_;
+        other.ID_ = 0;
+    }
+    return *this;
+}
 
 Package::~Package() {
     freed_IDs.insert(ID_);

@@ -1,7 +1,3 @@
-//
-// Created by adamp on 08.01.2023.
-//
-
 #ifndef NETSIM_STORAGE_TYPES_HPP
 #define NETSIM_STORAGE_TYPES_HPP
 

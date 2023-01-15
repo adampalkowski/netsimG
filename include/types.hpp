@@ -1,7 +1,3 @@
-//
-// Created by adamp on 08.01.2023.
-//
-
 #ifndef NETSIM_TYPES_HPP
 #define NETSIM_TYPES_HPP
 // aliasy
@@ -13,4 +9,5 @@ using const_iterator = std::list<Package>::const_iterator;
 using size_type=std::size_t;
 
 using ElementID = unsigned int;
+
 #endif //NETSIM_TYPES_HPP
