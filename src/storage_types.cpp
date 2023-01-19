@@ -1,62 +1,43 @@
-#include <iostream>
+//Szymon Pająk <411633>, Adam Pałkowski <411994>,Mateusz Płatek <410324>
+
 #include "storage_types.hpp"
 #include "types.hpp"
 
 
-
-class EmptyQueException : public std::exception {
-public:
-    char * what () {
-        return "Que is empty";
-    }
-};
-
-bool PackageQueue:: empty() const {
-    if(package_list.empty()){
-        return true;
-    }else{
-        return false;
-    }
-}
-
 Package PackageQueue::pop() {
     Package package_to_pop;
 
-    // co zwrocic jesli jest pusta ???
-    if (package_list.empty()){
-        try{
-            throw EmptyQueException();
-        }catch (EmptyQueException mce) {
-            std::cout << "Caught EmptyQueException" << std::endl;
-            std::cout << mce.what();
-        }
-    }
     switch(packageQueueType){
         case PackageQueueType::LIFO:
-            package_to_pop = std::move(package_list.back());
-            package_list.pop_back();
+            package_to_pop = std::move(*package_list.begin());
+            package_list.pop_front();
             break;
 
         case PackageQueueType::FIFO:
-            package_to_pop = std::move(package_list.front());
-            package_list.pop_front();
+            package_to_pop =  std::move(*package_list.end());
+            package_list.pop_back();
             break;
     }
     return package_to_pop;
 }
 
 //TODO: Trzeba to zrobić
-void PackageQueue::push(Package&&) {
+void PackageQueue::push(Package&& package) {
 
+    package_list.push_back(std::move(package));
+    //zrobione :)
 }
-
 PackageQueueType PackageQueue::get_queue_type() const {
     return packageQueueType;
 }
 
-const_iterator PackageQueue::end() const { return package_list.end();}
-const_iterator PackageQueue::begin() const {return package_list.begin();}
-const std::reverse_iterator<const_iterator> PackageQueue::rend() const {return package_list.rend();}
-const std::reverse_iterator<const_iterator> PackageQueue::rbegin() const {return package_list.rbegin();}
 
-size_type PackageQueue::size() const {}
+size_type PackageQueue::size() const {
+
+    std::size_t size_of_container = 0;
+
+    for (const_iterator iter = package_list.begin(); iter != package_list.end(); iter++) {
+        size_of_container++;
+    }
+    return size_of_container;
+}

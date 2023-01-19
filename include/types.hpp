@@ -1,3 +1,5 @@
+//Szymon Pająk <411633>, Adam Pałkowski <411994>,Mateusz Płatek <410324>
+
 #ifndef NETSIM_TYPES_HPP
 #define NETSIM_TYPES_HPP
 // aliasy
@@ -5,9 +7,10 @@
 #include <list>
 #include "package.hpp"
 
-using const_iterator = std::list<Package>::const_iterator;
 using size_type=std::size_t;
-
 using ElementID = unsigned int;
+using Time = int;
+using TimeOffset = int;
+using ProbabilityGenerator = std::function<double()>;
 
 #endif //NETSIM_TYPES_HPP
